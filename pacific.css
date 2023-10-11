@@ -1,0 +1,126 @@
+/*
+File: pacific.css
+GUI Assignment: Creating your first web page
+Aum Patel, Umass Lowell Computer Science, aum_patel@student.uml.edu
+Copyright (c) 2021 by Aum. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+updated by AP on ***October 10, 2023 at 10:15 PM***
+*/
+
+header, hgroup, footer, figure, figcaption, aside, section, article {
+    display: block;
+}
+
+body {
+	background-color: #00569f;
+    background-image: url(ptrbackground.jpg);
+    background-repeat: repeat-x;
+    color: #666666;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* base for the page  */
+#wrapper {
+    margin-right: auto;
+    margin-left: auto;
+    background-color: skyblue;
+    max-width: 80%;
+    min-width: 600px;
+}
+
+/* Navigation on the left */
+nav {
+    float: left;
+	width: 10rem;
+    padding: 10px 5px 5px 10px;
+}
+
+/* styling the list in <nav> to align is like the example */
+nav ul {
+    margin: 0;
+    padding-top: 1rem;
+    padding-right: 3rem;
+    padding-left: 1rem;
+    font-weight: bolder;
+    font-size: 1.2em;
+    list-style-type: none;
+}
+
+/* styling #content to align it next to the navigation bar */
+#content {
+    background-color: white;
+    margin-left: 12rem;
+    padding-top: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+/* keeping the image on the left */
+#content img {
+    float: left;
+    margin-right: 1rem;
+}
+
+/* styling the list in #content. Added the gif as bullet point */
+#content ul {
+    padding: 0;
+	list-style-image: url(marker.gif);
+    list-style-position: inside;
+}
+
+a {
+    font-weight: bold;
+    color: #0e0d34;
+    text-decoration: none; /* removing underline from hyperlinks */
+}
+
+nav a:visited {
+    color: #344873; /* to change color after a link is visited */
+}
+
+nav a:hover {
+    color: #FFFFFF; /* to change color when mouse hovers over a link */
+}
+
+h1 {
+    margin-bottom: 0;
+    padding: 10px;
+    background-image: url(sunset.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: #0e0d34;      /*used color picker online to find the right shade of blue*/
+    color: white;
+
+}
+
+h2 {
+    margin-top: 0;
+    color: #3399CC; 
+}
+
+h1, h2 {
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+.resort {
+	font-weight: bold;
+	color: #3399CC;
+}
+
+#contact {
+    font-size: 80%;
+}
+
+dt {
+    color: #000033;
+}
+
+footer {
+    font-family: Georgia, "Times New Roman", serif;
+	font-size: 0.80em;
+    font-style: italic;
+    background-color: white;
+	margin-left: 12rem;
+    padding: 20px 0 20px 30px;  /* added padding to align with #content */
+}
